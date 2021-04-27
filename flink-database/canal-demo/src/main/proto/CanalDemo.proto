@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.canal_demo";
+option java_outer_classname = "CanalModel";
+
+message RowData{
+  string LogfileName = 1;
+  int64 LogfileOffset = 2;
+  string eventType = 3;
+  string schemaName = 4;
+  string tableName = 5;
+  uint64 executeTime = 6;
+  map<string, string> columns = 7;
+}
